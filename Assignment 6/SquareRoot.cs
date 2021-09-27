@@ -30,7 +30,7 @@ namespace Assignment_6
                 root = 0.5 * (x + (n / x));
 
                 // Check for closeness
-                if (Math.Abs(root - x) < l)
+                if (Math.Abs(root - x) < l)//Returns the absolute value of a specified number.
                     break;
 
                 // Update root
