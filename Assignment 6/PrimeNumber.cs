@@ -13,19 +13,19 @@ namespace Assignment_6
 
             int n, num = 0;
             Console.Write("ENTER A NUMBER");
-            n = Convert.ToInt32(Console.ReadLine());
-            for (int i = 2; i <= n / 2; i++)
+            n = Convert.ToInt32(Console.ReadLine());//Taking input from the user
+            for (int i = 2; i <= n / 2; i++)//checking from 2 to half of the number if itis divisible or not
             {
                 if (n % i == 0)
                 {
-                    Console.WriteLine("THE NUMBER IS NOT A PRIME NUMBER");
+                    Console.WriteLine("THE NUMBER IS NOT A PRIME NUMBER");//if yes not a Prime Number
                     num = num + 1;
                     break;
                 }
             }
             if (num == 0)
             {
-                Console.WriteLine("THE NUMBER IS A PRIME NUMBER");
+                Console.WriteLine("THE NUMBER IS A PRIME NUMBER"); //if no it is a Prime Number
             }
             Console.ReadLine();
         }
