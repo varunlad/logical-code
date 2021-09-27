@@ -12,14 +12,14 @@ namespace Assignment_6
         {
             int[] arr = new int[100];
             Random random = new Random();
-            int number = random.Next(1, 10);
+            int number = random.Next(1, 10);//Taking Random number from 1 to 10
             Console.WriteLine("The array list is:");
             for (int i=0;i<=10;i++)
             {
                 int num = random.Next(1, 10);
                 arr[i] = num;
                 
-                Console.Write(" " +arr[i]);
+                Console.Write("Coupon NUmber is: " +arr[i]);//Printing the coupon  number
                 
             }
             Console.ReadLine();
