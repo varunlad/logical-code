@@ -15,9 +15,9 @@ namespace Assignment_6
             n = Convert.ToInt32(Console.ReadLine());
             while (n > 0)
             {
-                int num = n % 10;
-                sum = sum * 10 + num;
-                n = n / 10;
+                int num = n % 10;//finding the remainder
+                sum = sum * 10 + num;//making it reverse
+                n = n / 10;//making the number divided by 10
             }
             Console.WriteLine("THE REVERSE OF A NUMBER IS :" + sum);
             Console.ReadLine();
