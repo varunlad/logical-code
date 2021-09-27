@@ -12,18 +12,19 @@ namespace Assignment_6
         {
             double add = 0;
             Console.Write("Enter a number");
-            double n = Convert.ToDouble(Console.ReadLine());
+            double n = Convert.ToDouble(Console.ReadLine());//Taking input from User
             for(int i=10;i>=0;i--)
             {
-            double a = Math.Pow(2, i);
-                if(a <= n) 
+            double a = Math.Pow(2, i); //here a=2power(i)
+                while(a <= n) 
                 {
                     if (n % 2 == 0)
                     {
                         n = n - a;
-                        Console.WriteLine("THE POWERS OF 2 IN A NUMBER IS:" + a);
+                        Console.WriteLine("THE POWERS OF 2 IN A NUMBER IS:" + a);//if true itis in the power of two
                         add = add + a;
                         Console.WriteLine("The addition is :" + add);
+                        Console.Write(1);
                     }
                     else 
                     {
@@ -36,7 +37,7 @@ namespace Assignment_6
                     {
                         break;
                     }
-                }
+                }               
             }
             Console.ReadLine();
         }
