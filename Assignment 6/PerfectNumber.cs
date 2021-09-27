@@ -12,15 +12,15 @@ namespace Assignment_6
         {
             int n, sum = 0;
             Console.Write("Enter a number : ");
-            n = Convert.ToInt32(Console.ReadLine());
+            n = Convert.ToInt32(Console.ReadLine());//Taking input from the user
             for (int i = 1; i <= n / 2; i++)
             {
-                if (n % i == 0)
+                if (n % i == 0)//checking for the Factors
                 {
                     sum = sum + i;
                 }
             }
-            if (n % sum == 0)
+            if (n % sum == 0)//if the number equal to the sum of factors then its perfect number 
             {
                 Console.WriteLine("THE NUMBER IS PERFECT NUMBER");
             }
