@@ -12,11 +12,11 @@ namespace Assignment_6
         {
             Console.WriteLine("WE ARE CALCULATING MONTHLY PAYMENT");
             Console.Write("Enter principle loan amount :");
-            double principle = Single.Parse(Console.ReadLine());
+            double principle = Single.Parse(Console.ReadLine());//Taking input to enter Principle Amount
             Console.Write("Enter rate :");
-            double rate = Single.Parse(Console.ReadLine());
+            double rate = Single.Parse(Console.ReadLine());//Taking input to enter Rate Per Anum
             Console.Write("Enter years :");
-            double years = Single.Parse(Console.ReadLine());
+            double years = Single.Parse(Console.ReadLine());//Taking input to enter Years
             double r = (rate/1200);
             double x= principle * r;
             double y= (1+r);
