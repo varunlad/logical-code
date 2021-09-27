@@ -11,11 +11,11 @@ namespace Assignment_6
         public void vendringmachine()
         {
             int one=0, two=0, five=0, ten=0,twenty=0, fifty=0, hundred=0, fiveHundred=0, thousand=0;
-            Console.Write("Enter a number");
+            Console.Write("Enter the Amount: ");//Here we enter the amount
             int n = Convert.ToInt32(Console.ReadLine());
-            while(n>0)
+            while(n>0)//continue the loop till amount become zero
             {
-                if(n>1000)
+                if(n>1000)//Starting to count from 1000 to 1 rupee note
                 {
                     thousand = thousand + 1;
                     n = n - 1000;
@@ -62,8 +62,7 @@ namespace Assignment_6
                 }
 
             }
-
-            //Console.Write(" The number of one notes are :{0}\nThe number of two notes are :{1}\nThe number of five notes are :{2}\nThe number of ten notes are :{3}\nThe number of Twenty notes are :{4}\nThe number of Fifty notes are :{5}\nThe number of Hundred notes are :{6}\nThe number of Five Hundred notes are :{7}\nThe number of Thousand notes are :{8}\n", one , two , five , ten , fifty , hundred , fiveHundred , thousand );
+            //Printing the Number Of Notes For given Amount
             Console.WriteLine(" The number of one notes are :" + one);
             Console.WriteLine(" The number of two notes are :" + two);
             Console.WriteLine(" The number of five notes are :" + five);
