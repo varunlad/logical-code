@@ -20,7 +20,7 @@ namespace Assignment_6
             int x = y0 + y0 / 4 - y0 / 100 + y0 / 400;
             int m = month + (12 * (14 - month)) / 12 - 2;
             int d0=((day+x+31*m/12)%7);
-            switch(d0)
+            switch(d0) //Cases for the Day for that date
             {
                 case 5:
                     Console.WriteLine("Its sunday");
